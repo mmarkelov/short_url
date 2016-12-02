@@ -1,0 +1,11 @@
+{% extends "shortener/base.html" %}
+
+{% block content %}
+<div>
+	<h1>Success</h1>
+	<p>{{ object.url }}</p>
+
+	<p><a class="btn btn-link" href="{{ object.shortcode }}">{{ object.shortcode }}</a></p>
+	<a class="btn btn-primary" href="">New</a>
+</div>
+{% endblock content %}
